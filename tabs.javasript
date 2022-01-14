@@ -1,0 +1,40 @@
+  let btn1 = document.getElementById("aboutButton");
+let btn2 = document.getElementById("timeToVisitButton");
+let btn3 = document.getElementById("attractionsButton");
+
+let para1 = document.getElementById("aboutTab");
+let para2 = document.getElementById("timeToVisitTab");
+let para3 = document.getElementById("attractionsTab");
+
+para2.classList.add("d-none");
+para3.classList.add("d-none")
+
+function about() {
+    para1.classList.remove("d-none");
+    para2.classList.add("d-none");
+    para3.classList.add("d-none");
+
+    btn1.classList.add("selected-button")
+    btn2.classList.remove("selected-button")
+    btn3.classList.remove("selected-button")
+}
+
+function time() {
+    para1.classList.add("d-none");
+    para2.classList.remove("d-none");
+    para3.classList.add("d-none");
+
+    btn1.classList.remove("selected-button")
+    btn2.classList.add("selected-button")
+    btn3.classList.remove("selected-button")
+}
+
+function attract() {
+    para1.classList.add("d-none");
+    para2.classList.add("d-none");
+    para3.classList.remove("d-none");
+
+    btn1.classList.remove("selected-button")
+    btn2.classList.remove("selected-button")
+    btn3.classList.add("selected-button")
+}
